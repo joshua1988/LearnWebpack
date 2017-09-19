@@ -65,7 +65,7 @@ Let's learn what is webpack and the basic of it.
   + <script src="dist/bundle.js"></script>
   ```
 
-6. run this command `webpack app/index.js dist/bundle.js` and start the index.html
+6. run this command `webpack app/index.js dist/bundle.js` and start the index.html. You will see this result on the web page.
 
   ```html
   Hello webpack

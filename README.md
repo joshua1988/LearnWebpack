@@ -44,7 +44,13 @@ Let's learn what is webpack and the basic of it.
   document.body.appendChild(component());
   ```
 
-4. add the contents below into the file
+4. install lodash library using this command
+
+  ```text
+  npm i lodash --save
+  ```
+
+5. add the contents below into the file
 
   ```js
   // index.js
@@ -59,13 +65,13 @@ Let's learn what is webpack and the basic of it.
   + <script src="dist/bundle.js"></script>
   ```
 
-5. run this command `webpack app/index.js dist/bundle.js` and start the index.html
+6. run this command `webpack app/index.js dist/bundle.js` and start the index.html
 
   ```html
   Hello webpack
   ```
 
-6. Let's add config file for more complex configuration
+7. Let's add config file for more complex configuration
 
   ```js
   // webpack.config.js

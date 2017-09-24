@@ -1,7 +1,7 @@
 {
   "name": "example2",
   "version": "1.0.0",
-  "description": "Libraries Code Splitting",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,10 +9,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.6.0"
+  },
   "dependencies": {
     "lodash": "^4.17.4",
-    "moment": "^2.18.1",
-    "webpack": "^2.6.0",
-    "webpack-manifest-plugin": "^1.1.0"
+    "moment": "^2.18.1"
   }
 }

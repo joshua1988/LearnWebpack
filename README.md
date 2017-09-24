@@ -274,6 +274,13 @@ plugins: [
 ]
 
 // 2
+plugins: [
+  new webpack.optimize.CommonsChunkPlugin({
+    names: ['vendor', 'manifest'] // Extract the webpack bootstrap logic into manifest.js
+  }),
+]
+
+// 3
 new ManifestPlugin({
   fileName: 'manifest.json',
   basePath: './dist/'

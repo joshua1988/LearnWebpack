@@ -335,6 +335,33 @@ module.exports = {
 5. run `webpack`
 6. uncomments `#2` and `#3` to see how Resolve alias & Provide Plugin works
 
+```js
+// #2 - Using alias
+// index.js
+import $ from 'Vendor/jquery-2.2.4.min.js';
+console.log("loaded jQuery version is " + $.fn.jquery);
+
+// webpack.config.js
+resolve: {
+  alias: {
+    Vendor: path.resolve(__dirname, './app/vendor/')
+  }
+}
+```
+
+```js
+// #3 - Using Provide Plugin
+// index.js
+console.log("loaded jQuery version is " + $.fn.jquery);
+
+// webpack.config.js
+plugins: [
+  new webpack.ProvidePlugin({
+    $: 'jquery'
+  })
+]
+```
+
 #### Example 4 - Webpack Dev Server Setting
 - Initial development setting to make the build process easier
 

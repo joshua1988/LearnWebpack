@@ -396,7 +396,7 @@ webpack-dev-server --open
 3. Add `app/index.js`
 
 ```js
-var ele = document.getElementsByClassName('container')[0]
+var ele = document.getElementsByClassName('container')[0];
 ele.innerText = "Webpack loaded!!";
 ```
 
@@ -476,7 +476,7 @@ console.log("Server running on port 3000");
 5. Add `app/index.js`
 
 ```js
-var ele = document.getElementsByClassName('container')[0]
+var ele = document.getElementsByClassName('container')[0];
 ele.innerText = "Webpack loaded!!";
 ```
 

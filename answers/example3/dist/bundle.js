@@ -10338,7 +10338,7 @@ return jQuery;
 // import $ from 'Vendor/jquery-2.2.4.min.js';
 // console.log("loaded jQuery version is " + $.fn.jquery);
 
-// #3 - Using Provide Plugin
+// // #3 - Using Provide Plugin
 console.log("loaded jQuery version is " + $.fn.jquery);
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))

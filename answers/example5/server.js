@@ -1,20 +1,21 @@
-// Express Web Framework
 var express = require('express');
 var app = express();
 var path = require('path');
 
-// Webpack Dev Server #1 - load the needed libraries
+// #1
 var webpackDevMiddleware = require("webpack-dev-middleware");
 var webpack = require("webpack");
 var webpackConfig = require("./webpack.config");
 var compiler = webpack(webpackConfig);
 
-app.use(express.static(__dirname));
-// Webpack Dev Server #2 - add the loaded libraries to use
+// #2
 app.use(webpackDevMiddleware(compiler, {
   publicPath: webpackConfig.output.publicPath,
-  stats: {colors: true}
+  stats: {colors: true},
+  lazy: true
 }));
+
+app.use(express.static(__dirname));
 
 // view engine setup
 // __dirname : root folder

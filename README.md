@@ -165,6 +165,10 @@ module.exports = {
 
 ```js
 // webpack.config.js
+
+// ...
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+// ...
 {
   // ...
   module: {

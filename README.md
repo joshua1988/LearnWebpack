@@ -188,6 +188,30 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 }
 ```
 
+8. Add stylesheet link element to index.html
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS & Libraries Code Splitting</title>
+        <link rel="stylesheet" href="dist/styles.css">
+    </head>
+    <body>
+        <header>
+            <h3>CSS Code Splitting</h3>
+        </header>
+        <div>
+            <p>
+                This text should be colored with blue after injecting CSS bundle
+            </p>
+        </div>
+        <script src="dist/bundle.js"></script>
+    </body>
+</html>
+```
+
 #### Example 2 - Libraries Code Splitting
 - When using a couple of libraries, should you import them at the very beginning of bundling all files to avoid repetitively use them in every build.
 

@@ -8,5 +8,19 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  npm i jquery jquery-ui
+  "dependencies": {
+    "jquery": "^3.6.1",
+    "jquery-ui": "^1.13.2",
+    "vue": "^3.2.41"
+  },
+  npm i vue -D
+  npm i vue --saev-dev
+  "devDependencies": {
+    
+    "webpack": "",
+    "js-compression": "",
+    "sass": "",
+  }
 }
